@@ -7,8 +7,8 @@ $(".spoiler span").hide();
 $(".spoiler").append('<button>Reveal Spoiler!</button>');
 //Do something when button is pushed
 $("button").click(function() {
-  //3.1 Show Spoiler
-  $(".spoiler span").show();
+  //3.1 Show Spoiler next to the button clicked
+  $(this).prev().show();
   //3.2 Remove button
   $(this).remove();
 });
