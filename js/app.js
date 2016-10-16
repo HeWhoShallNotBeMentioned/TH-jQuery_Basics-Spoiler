@@ -9,5 +9,6 @@ $(".spoiler").append('<button>Reveal Spoiler!</button>');
 $("button").click(function() {
   //3.1 Show Spoiler
   $(".spoiler span").show();
-
+  //3.2 Remove button
+  $(this).remove();
 });
